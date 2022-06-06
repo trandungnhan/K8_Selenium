@@ -13,16 +13,14 @@ public class Passwords {
         String myPassword = "password123";
         Scanner scanner = new Scanner(System.in);
 
-        int countNumber = 3;
-        for (int time = 0; time < 3; time++) {
+        for (int time = 3; time != 0; time--) {
             System.out.print("Please input password: ");
             String enteredPassword = scanner.next();
             if(enteredPassword.equals(myPassword)){
                 System.out.println("You are login successfully!!!");
                 break;
             }else{
-                countNumber--;
-                System.out.printf("Your password is incorrect!!! You have %d time(s) to login\n",countNumber);
+                System.out.printf("Your password is incorrect!!! You have %d time(s) to login\n",time-1);
             }
         }
     }
