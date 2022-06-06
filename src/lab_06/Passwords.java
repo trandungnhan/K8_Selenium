@@ -13,7 +13,7 @@ public class Passwords {
         String myPassword = "password123";
         Scanner scanner = new Scanner(System.in);
 
-        for (int time = 3; time != 0; time--) {
+        for (int time = 3; time > 0; time--) {
             System.out.print("Please input password: ");
             String enteredPassword = scanner.next();
             if(enteredPassword.equals(myPassword)){
