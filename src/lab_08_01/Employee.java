@@ -16,9 +16,9 @@ public abstract class Employee {
     public Employee() {
     }
 
-    public Employee(int salary, String id) {
+    public Employee(int salary, String type) {
         this.salary = salary;
-        this.type = id;
+        this.type = type;
     }
 
     public int getSalary(){
