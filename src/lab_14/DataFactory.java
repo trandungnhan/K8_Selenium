@@ -37,9 +37,9 @@ public class DataFactory {
                 int bookISBN = book.getIsbn();
                 String bookAuthor = book.getAuthor();
                 String bookTitle = book.getTitle();
-                String booYear = book.getYear();
+                String bookYear = book.getYear();
                 String dataLine;
-                dataLine = String.valueOf(bookISBN).concat(";").concat(bookAuthor).concat(";").concat(bookTitle).concat(";").concat(booYear);
+                dataLine = String.valueOf(bookISBN).concat(";").concat(bookAuthor).concat(";").concat(bookTitle).concat(";").concat(bookYear);
                 bufferedWriter.write(dataLine);
                 bufferedWriter.newLine();
             }
