@@ -1,10 +1,5 @@
 package lab_14;
 
-import lab_09.Animal;
-
-import java.io.BufferedReader;
-import java.security.SecureRandom;
-
 public class Book {
 
     private int isbn;
