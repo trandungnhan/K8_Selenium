@@ -23,7 +23,15 @@ public class TestAnimal {
 
     public static void main(String[] args) {
 
-        new TestAnimal().findAnimalWinner(Arrays.asList(new lab_12.Tiger(),new lab_12.Horse(),new lab_12.Dog(),new Eagle(),new Falcon()));
+//        new TestAnimal().findAnimalWinner(Arrays.asList(new lab_12.Tiger(),new lab_12.Horse(),new lab_12.Dog(),new Eagle(),new Falcon()));
+
+        lab_12.Animal tiger = new lab_12.Tiger();
+        lab_12.Animal horse = new lab_12.Horse();
+        lab_12.Animal dog = new lab_12.Dog();
+        lab_12.Animal eagle = new lab_12.Eagle();
+        lab_12.Animal falcon = new lab_12.Falcon();
+
+        new TestAnimal().findAnimalWinner(Arrays.asList(tiger,horse,dog,eagle,falcon));
 
     }
 }
